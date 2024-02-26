@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contract.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <div id="brg"></div>
+    <div class="form-container">
+        <h2>Gửi câu hỏi:</h2>
+        <h2>Chúng tôi sẽ trả lời trong ít phút!!</h2>
+        <form id="contact-form">
+            <label for="name">Họ tên:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="question">Câu hỏi:</label>
+ 
+            <datalist id="question-suggestions">
+              <option value="Giải thích thêm về sản phẩm/dịch vụ của bạn?"></option>
+              <option value="Thời gian giao hàng ước tính là bao lâu?"></option>
+              <option value="Liên hệ với bộ phận hỗ trợ khách hàng của bạn như thế nào?"></option>
+              <option value="Thay đổi/chỉnh sửa đơn hàng sau khi đã đặt hàng?"></option>
+              <option value="Chính sách đổi trả hàng của bạn như thế nào?"></option>
+              <option value="Theo dõi đơn hàng của tôi như thế nào?"></option>
+              <option value="Thông tin về chính sách bảo mật?"></option>
+              <option value="Có chương trình khuyến mãi hoặc phiếu giảm giá nào hiện đang diễn ra không?"></option>
+            </datalist>
+            <textarea id="question" name="question" required list="question-suggestions"></textarea>
+            
+
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+
+    <div class="question-list">
+        <h2>Câu hỏi đã gửi</h2>
+        <div id="question-container"></div>
+    </div>
+    <script src="contract.js"></script>
+</body>
+</html>

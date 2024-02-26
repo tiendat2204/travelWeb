@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+   
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="form sign_in">
+          <h3>ĐĂNG NHẬP</h3>
+          <span>HOẶC SỬ DỤNG TÀI KHOẢN CÓ SẴN</span>
+
+          <form action="#" id="form_input">
+            <div class="type">
+              <input type="email" placeholder="Email" name="" id="email1" />
+            </div>
+            <div class="type">
+              <input
+                type="password"
+                placeholder="Password"
+                name=""
+                id="password1"
+              />
+            </div>
+
+            <div class="forgot">
+              <span>QUÊN MẬT KHẨU?</span>
+            </div>
+
+            <button class="btn bkg" onclick="login(event)">ĐĂNG NHẬP</button>
+          </form>
+        </div>
+
+        <div class="form sign_up">
+          <h3>ĐĂNG KÍ</h3>
+          <span>hoặc sử dụng email của bạn để đăng ký</span>
+
+          <form action="#" id="form_input">
+            <div class="type">
+              <input type="text" name="" placeholder="Name" id="name" />
+            </div>
+            <div class="type">
+              <input type="email" name="" placeholder="Email" id="email2" />
+            </div>
+            <div class="type">
+              <input
+                type="password"
+                name=""
+                placeholder="Password"
+                id="password2"
+              />
+            </div>
+
+            <button class="btn bkg" onclick="signup(event)">ĐĂNG KÍ</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="overlay">
+        <div class="page page_signIn">
+          <h3>CHÀO MỪNG TRỞ LẠI</h3>
+          <p>Để theo kịp với chúng tôi xin vui lòng đăng Kí với thông tin cá nhân của bạn</p>
+
+          <button class="btn btnSign-in">
+           ĐĂNG KÍ
+          </button>
+        </div>
+
+        <div class="page page_signUp">
+          <h3>CHÀO BẠN!</h3>
+          <p>Nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng tôi</p>
+
+          <button class="btn btnSign-up">
+            ĐĂNG NHẬP
+          </button>
+        </div>
+      </div>
+    </div>
+
+ 
+    <script src="form.js"></script>
+  </body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="themify-icons/themify-icons.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+  </head>
+  <body>
+    
+    <div id="dragOverlay" class="drag-overlay">
+      <div class="drag-container">
+        <div id="imageContainer" class="image-container">
+          <img src="img/favicon.png" alt="Image 1" draggable="true" ondragstart="dragStart(event)">
+        </div>
+        <div id="dropZone" class="drop-zone" ondragover="dragOver(event)" ondrop="drop(event)">
+        </div>
+      </div>
+    </div>
+    
+    
+    <header class="header-nav">
+      <div class="logo-title">
+        <a href="">
+          <img src="img/color-default.svg" alt="" />
+        </a>
+      </div>
+      <nav class="header-nav__list">
+        <div class="header-nav__menu-icon" onclick="toggleMenu()">
+          <img src="/img/7216128.png" alt="Menu Icon" />
+        </div>
+        <ul>
+          <li class="header-nav__item" id="home"><a href="">TRANG CHỦ</a></li>
+          <li class="header-nav__item" id="product"><a href="">KHÁM PHÁ</a></li>
+          <li class="header-nav__item" id="sale"><a href="">ƯU ĐÃI</a></li>
+          <li class="header-nav__item" id="contract"><a href="">LIÊN HỆ</a></li>
+          <li class="header-nav__item">
+            <a href="index2.html" id="account-link">TÀI KHOẢN</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-nav__menu-content">
+        <ul>
+          <li><a href="">TRANG CHỦ</a></li>
+          <li><a href="">SẢN PHẨM</a></li>
+          <li><a href="">ƯU ĐÃI</a></li>
+          <li><a href="">LIÊN HỆ</a></li>
+          <li><a href="index2.html">TÀI KHOẢN</a></li>
+        </ul>
+      </div>
+    </header> 
+    <div class="container">
+      <div class="home">
+        <div class="home__background"></div>
+        <div class="home_all">
+          <div class="home-title">
+            <h1>THẾ GIỚI</h1>
+            <h1>DIỆU KÌ</h1>
+          </div>
+          <div class="btn-home">
+            <div class="btn1"></div>
+            <a href="">KHÁM PHÁ NGAY</a>
+          </div>
+        </div>
+      </div>
+      <section class="search">
+        <div class="grid wide">
+          <div class="search-header">
+            <ul class="search-header__list--pc hide-on-tb-mb">
+              <li class="search-header__item search-header__item--active">
+                <img src="img/hotel.webp" alt="" />
+                NHÀ NGHỈ
+              </li>
+              <li class="search-header__item">
+                <img src="img/car.webp" alt="" />
+               THUÊ XE
+              </li>
+              <li class="search-header__item">
+                <img src="img/fly.webp" alt="" />
+                MÁY BAY
+              </li>
+              <li class="search-header__item">
+                <img src="img/trip.webp" alt="" />
+               CHUYẾN ĐI
+              </li>
+              <li class="search-header__item">
+                <img src="img/cruises.webp" alt="" />
+                 MÓN ĂN
+              </li>
+              <li class="search-header__item">
+                <img src="img/activities.webp" alt="" />
+                HOẠT ĐỘNG
+              </li>
+            </ul>
+          </div>
+          <div class="search-container">
+            <div class="search-header-tb-mb__list hide-on-pc">
+            <div class="row">
+              
+                <div class="search__section">
+                  <div class="search__label">ĐIỂM ĐẾN</div>
+                  <input type="text" class="search__input" />
+                
+              </div>
+             
+                <div class="search__section">
+                  <div class="search__label">CHECK IN</div>
+                  <input type="text" class="search__input" />
+                </div>
+             
+              
+                <div class="search__section">
+                  <div class="search__label">CHECK OUT</div>
+                  <input type="text" class="search__input" />
+                </div>
+             
+             
+                <div class="search__section">
+                  <div class="search__label">NGƯỜI LỚN</div>
+                  <input type="number" class="search__input" />
+                </div>
+             
+             
+                <div class="search__section">
+                  <div class="search__label">TRẺ EM</div>
+                  <input type="number" class="search__input" />
+                </div>
+             
+            </div>
+
+            <div class="row">
+                <div class="search-btn">TÌM...</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="tour">
+        <div class="grid wide">
+            <div class="tour-content">
+                <h2 class="section-title">NHỮNG CHUYẾN ĐI NỔI BẬT</h2>
+                <p class="tour-text">“Đích đến không phải là nơi bạn kết thúc chuyến đi mà đó là những rủi ro và những kỷ niệm bạn đã tạo ra trên suốt chặng đường.” – Penelope Riley.</p>
+            </div>
+            <div class="tour-container ">
+              <div class="imgbgr tour-item">
+                <div class="tour1 ">
+                  <p class="tour-item__date">Ngày 15 Tháng 5 Năm 2023</p>
+                  <div class="tour-item__content">
+                    <h4 class="tour-item__title">Scotland</h4>
+                    <div class="tour-item__price">Giá: 1.500.000</div>
+                  <div class="tour-item__rating">
+                    <i class="ti-star"></i>
+                    <i class="ti-star"></i>
+                    <i class="ti-star"></i>
+                    <i class="ti-star"></i>
+                    <i class="ti-star"></i>
+                  </div>
+                </div>
+                <div class="btn-wrap">
+                  <a href="" class="btn">Xem Thêm...</a>
+                  <div class="btn-bg"></div>
+              </div>
+              </div>
+            </div>
+            <div class="imgbgr tour-item">
+              <div class="tour1 ">
+                <p class="tour-item__date">Ngày 15 Tháng 5 Năm 2023</p>
+                <div class="tour-item__content">
+                  <h4 class="tour-item__title">Greece</h4>
+                  <div class="tour-item__price">Giá: 1.500.000</div>
+                <div class="tour-item__rating">
+                  <i class="ti-star"></i>
+                  <i class="ti-star"></i>
+                  <i class="ti-star"></i>
+                  <i class="ti-star"></i>
+                  <i class="ti-star"></i>
+                </div>
+              </div>
+              <div class="btn-wrap">
+                <a href="" class="btn">Xem Thêm...</a>
+                <div class="btn-bg"></div>
+            </div>
+            </div>
+          </div>
+          <div class="imgbgr tour-item">
+            <div class="tour1 ">
+              <p class="tour-item__date">Ngày 15 Tháng 5 Năm 2023</p>
+              <div class="tour-item__content">
+                <h4 class="tour-item__title">Mauritius</h4>
+                <div class="tour-item__price">Giá: 1.500.000</div>
+              <div class="tour-item__rating">
+                <i class="ti-star"></i>
+                <i class="ti-star"></i>
+                <i class="ti-star"></i>
+                <i class="ti-star"></i>
+                <i class="ti-star"></i>
+              </div>
+            </div>
+            <div class="btn-wrap">
+              <a href="" class="btn">Xem Thêm...</a>
+              <div class="btn-bg"></div>
+          </div>
+          </div>
+        </div>  
+        </div>
+        </div>
+      </section>
+      <section class="package">
+        <div class="grid wide">
+          <div class="package-container vip">
+              <div class="package-content">
+                  <h4 class="section-title">CÁC GÓI DU LỊCH SANG TRỌNG</h4>
+                  <div class="package-rating">
+                      <i class="ti-star"></i>
+                      <i class="ti-star"></i>
+                      <i class="ti-star"></i>
+                      <i class="ti-star"></i>
+                      <i class="ti-star"></i>
+                  </div>
+                  <p class="package-desc">“Dù chúng ta lang thang khắp thế giới để tìm cái đẹp, nếu không mang theo nó bên mình, ta sẽ chẳng thể tìm được nó đâu.” – Ralph Waldo Emerson</p>
+              </div>
+              <div class="btn-wrap">
+                  <a href="" class="btn" id="btn-tour">ĐẶT PHÒNG NGAY...</a>
+                  <div class="btn-bg"></div>
+              </div>
+          </div>
+      </div>
+      </section>
+      <section class="offers"> 
+        <div class="grid wide">
+          <h4 class="section-title">CÁC CHUYẾN DU LỊCH</h4>
+          <div class="offers-content hidden">
+              <div class="row">
+                      <div class="offers-item__wrap ">
+                          <div class="offers-item__bg" >
+                            <img src="img/sea0.jpg" alt="" class="bgr-product">
+                              <a href="" class="offers-item__name">BÃI BIỂN BALI</a>
+                          </div>
+                          <div class="offers-item__container">
+                              <div class="offers-item__content">
+                                  <h4 class="offers-item__price">1.500.000 <span>MỘT ĐÊM</span></h4>
+                                  <div class="offers-item__rating">
+                                    <i class="ti-star"></i>
+                                    <i class="ti-star"></i>
+                                    <i class="ti-star"></i>
+                                    <i class="ti-star"></i>
+                                    <i class="ti-star"></i>
+                                  </div>
+                                  <p class="offers-item__desc">
+                                    Biển Bali là một trong những điểm đến du lịch nổi tiếng tại Indonesia và được coi là một trong những bãi biển đẹp nhất thế giới. Nó nằm ở đảo Bali, một trong những hòn đảo lớn nhất của quốc gia này và nằm trong Vịnh Biển Bali thuộc Biển Java.</p>
+                                  <div class="offers-item__action">
+                                      <img src="https://khoatranvn00.github.io/travelix/assets/images/ofi1.webp" alt="" class="offers-item__action-img">
+                                      <img src="https://khoatranvn00.github.io/travelix/assets/images/ofi2.webp" alt="" class="offers-item__action-img">
+                                      <img src="https://khoatranvn00.github.io/travelix/assets/images/ofi3.webp" alt="" class="offers-item__action-img">
+                                      <img src="https://khoatranvn00.github.io/travelix/assets/images/ofi4.webp" alt="" class="offers-item__action-img">
+                                  </div>
+                              </div>
+                              <a href="" class="offers-item__link">ĐỌC THÊM</a>
+                          </div>
+                      </div>
+                    </div>
+            </div>
+      </section>
+      <section class="bgr">
+        <div class="content-heading__background">
+          
+          <video id="content-heading__video" width="100%" height="100%" playsinline="" muted="" autoplay="" loop="">
+              <source src="img/intro-Vid-V2-No-Sound-copy.mp4" type="video/mp4">
+          </video>
+          <h1 class="title-video">Thế Giới Diệu Kì</h1>
+      </div>
+      </section>
+<section class="trending">
+  <div class="grid wide trending-container">
+    <h4 class="section-title">XU HƯỚNG</h4>
+    <div class="trending-content">
+      <div class="row">
+
+            <div class="trending-item">
+                <div class="trending-item__img">
+                <img src="img/td2.webp" alt="">
+                </div>
+                <div class="trending-item__content">
+                    <a href="" class="trending-item__name">GRAND HOTEL</a>
+                    <p class="trending-item__price">Form $182</p>
+                    <p class="trending-item__place">MADRID, SPAIN</p>
+                </div>
+            </div>
+            <div class="trending-item">
+              <div class="trending-item__img">
+              <img src="img/td3.webp" alt="">
+              </div>
+              <div class="trending-item__content">
+                  <a href="" class="trending-item__name">GRAND HOTEL</a>
+                  <p class="trending-item__price">Form $182</p>
+                  <p class="trending-item__place">MADRID, SPAIN</p>
+              </div>
+          </div>
+        
+        <div class="trending-item">
+          <div class="trending-item__img">
+          <img src="img/td5.webp" alt="">
+          </div>
+          <div class="trending-item__content">
+              <a href="" class="trending-item__name">GRAND HOTEL</a>
+              <p class="trending-item__price">Form $182</p>
+              <p class="trending-item__place">MADRID, SPAIN</p>
+          </div>
+      </div>
+      <div class="trending-item">
+        <div class="trending-item__img">
+        <img src="img/td6.webp" alt="">
+        </div>
+        <div class="trending-item__content">
+            <a href="" class="trending-item__name">GRAND HOTEL</a>
+            <p class="trending-item__price">Form $182</p>
+            <p class="trending-item__place">MADRID, SPAIN</p>
+        </div>
+    </div>
+    <div class="trending-item">
+      <div class="trending-item__img">
+      <img src="img/td7.webp" alt="">
+      </div>
+      <div class="trending-item__content">
+          <a href="" class="trending-item__name">GRAND HOTEL</a>
+          <p class="trending-item__price">Form $182</p>
+          <p class="trending-item__place">MADRID, SPAIN</p>
+      </div>
+  </div>
+  <div class="trending-item">
+    <div class="trending-item__img">
+    <img src="img/td8.webp" alt="">
+    </div>
+    <div class="trending-item__content">
+        <a href="" class="trending-item__name">GRAND HOTEL</a>
+        <p class="trending-item__price">Form $182</p>
+        <p class="trending-item__place">MADRID, SPAIN</p>
+    </div>
+</div>
+<div class="trending-item">
+  <div class="trending-item__img">
+  <img src="img/vip10.jpg" alt="">
+  </div>
+  <div class="trending-item__content">
+      <a href="" class="trending-item__name">GRAND HOTEL</a>
+      <p class="trending-item__price">Form $182</p>
+      <p class="trending-item__place">MADRID, SPAIN</p>
+  </div>
+</div>
+<div class="trending-item">
+  <div class="trending-item__img">
+  <img src="img/vip11.jpg" alt="">
+  </div>
+  <div class="trending-item__content">
+      <a href="" class="trending-item__name">GRAND HOTEL</a>
+      <p class="trending-item__price">Form $182</p>
+      <p class="trending-item__place">MADRID, SPAIN</p>
+  </div>
+</div>
+<div class="trending-item">
+  <div class="trending-item__img">
+  <img src="img/vip9.jpg" alt="">
+  </div>
+  <div class="trending-item__content">
+      <a href="" class="trending-item__name">GRAND HOTEL</a>
+      <p class="trending-item__price">Form $182</p>
+      <p class="trending-item__place">MADRID, SPAIN</p>
+  </div>
+</div>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="contact">
+  <div class="contact-bg"></div>
+  <div class="grid wide">
+      <div class="row">
+              <div class="contact__container">
+                  <h4 class="contact__header">ĐẶT VÉ NGAY</h4>
+                  <form action="" class="contact__form">
+                      <input type="text" class="contact__input contact__input1  " placeholder="Name"></input>
+                      <input type="text" class="contact__input contact__input1" placeholder="Email"></input>
+                      <input type="text" class="contact__input" placeholder="Subject"></input>
+                      <textarea name="" class="contact__input" id="" cols="5" rows="5" placeholder="Message" ></textarea>
+                      <button type="submit" class="btn contact__btn">GỬI NGAY !!...</button>
+                      <button  class="map" onclick="showmap(event)">check vị trí của bạn</button>
+                  </form>
+                  <div id="map"></div>
+              </div>
+      </div>
+  </div>
+</section>
+
+
+      
+    </div>
+    <button onclick="toggleDarkMode()" class="btn-grad">Chế độ sáng/tối</button>
+    <footer class="footer">
+      <div class="grid wide">
+        <div class="all">
+
+        
+        <div class="one">
+          <img src="img/color-default.svg" alt="">
+          <h2 class="title-travel">
+            “Nếu bạn muốn đi xa và nhanh hơn, hãy đi thật nhẹ nhàng. Bỏ hết tất cả ganh tị, ghen ghét, cố chấp, ích kỷ và sợ hãi. “- Cesare Pavese
+          </h2>
+          <div class="footer__about-social-list">
+            <a href="" class="footer__about-social-link">
+                <i class="ti-pinterest-alt"></i>
+            </a>
+            <a href="" class="footer__about-social-link">
+                <i class="ti-facebook"></i>
+            </a>
+            <a href="" class="footer__about-social-link">
+                <i class="ti-twitter-alt"></i>
+            </a>
+            <a href="" class="footer__about-social-link">
+                <i class="ti-dribbble"></i>
+            </a>
+            <a href="" class="footer__about-social-link">
+                <i class="ti-google"></i>
+            </a>
+        </div>
+        </div>
+        <div class="two">
+          <div class="footer-item__name">
+            <h4 class="title2">tags</h4> 
+        </div>
+        <div class="footer-item__content">
+            <a href="" class="footer-tag__link">Thiết Kế</a>
+            <a href="" class="footer-tag__link">Phong Cách</a>
+            <a href="" class="footer-tag__link">Âm nhạc</a>
+            <a href="" class="footer-tag__link">video</a>
+            <a href="" class="footer-tag__link">Bữa Tiệc</a>
+            <a href="" class="footer-tag__link">Nhiếp Ảnh</a>
+            <a href="" class="footer-tag__link">Hoạt Động</a>
+            <a href="" class="footer-tag__link">Du Lịch</a>
+        </div>
+        </div>
+        <div class="three">
+          <div class="footer-item__name">
+              <h4>CONTACT INFO</h4> 
+          </div>
+          <div class="footer-item__content">
+              <div class="footer-info-item">
+                  <a href="" class="footer-info-item__content">Tp Hồ Chí Minh</a>
+              </div>
+              <div class="footer-info-item">
+                  <a href="" class="footer-info-item__content">+84 354411541</a>
+              </div>
+              <div class="footer-info-item">
+                  <a href="" class="footer-info-item__content">datboyngeo@gmail.com</a>
+              </div>
+              <div class="footer-info-item">
+                  <a href="" class="footer-info-item__content">www.fullstack.edu.vn</a>
+              </div>
+          </div>
+      </div>
+  </div>
+      </div>
+      </div>
+    </footer>
+    <script src="trangchu.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXxNY1uiD1csX1GOP1DjLLAFRwpwx2R9U&callback=initMap" async defer></script>
+   
+  </body>
+</html>
+         
+
